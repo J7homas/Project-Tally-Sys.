@@ -7,8 +7,8 @@ public class projectTallySys {
     private Scanner scanner = new Scanner(System.in);
     private int count = 0;
     private String dbURL = "jdbc:mysql://localhost:3306/projecttally?useSSL=false&serverTimezone=UTC";
-    private String username = "root";
-    private String password = "RootPassword1$";
+    private String username = "";
+    private String password = "";
 
     public void fetchLastProjectNumber() {
         String sql = "SELECT MAX(ProjectNumber) FROM tallysys"; // Query to find the highest project number
